@@ -1,1 +1,1 @@
-# mapDetect
+# minimapDetect
