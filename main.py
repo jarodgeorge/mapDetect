@@ -60,7 +60,7 @@ def parseColors(texts):
         print(True)
         textMe()
         texts[0]+=1
-        time.sleep(30)
+        time.sleep(180)
 
     else:
         print(False)
@@ -83,8 +83,10 @@ if __name__ == '__main__':
     while(1):
         takeScreenshot()
         parseColors(texts)
+        # circuit breaker if left running 
         if texts[0]>=10:
-            time.sleep(30)
+            text[0] = 0
+            time.sleep(300)
             break
         time.sleep(1)
 
